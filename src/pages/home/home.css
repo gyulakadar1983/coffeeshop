@@ -1,0 +1,71 @@
+/* @import 'index.css'; */
+@import "../../fonts/Inter/inter.css";
+@import "../../styles/reset.css";
+@import "../../styles/root.css";
+@import "../../layouts/base.css";
+@import "../../components/logo/logo.css";
+@import "../../components/buttons/buttons.css";
+@import "../../components/projectInfo/projectInfo.css";
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.home-content {
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  width: min(100%, 800px);
+  height: min(100%, 600px);
+  padding: var(--p-lg);
+  background: var(--bg-section);
+}
+
+@media (max-width: 50em) {
+  .home-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.home-content__logo-container {
+  grid-row: 1;
+  position: relative;
+  height: calc(70px / 2.3);
+}
+
+.home-content__inner {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home-content__header {
+  text-align: center;
+  padding-bottom: var(--s-lg);
+  border-bottom: var(--bw-sm) solid var(--bc-ntrl-lt);
+}
+
+.home-content__heading {
+  margin-bottom: var(--s-base);
+  color: var(--fg-2);
+  font-size: var(--fs-lgr);
+  font-weight: 600;
+}
+
+.home-content__text {
+  color: var(--fg-2);
+  line-height: 1.5;
+  font-size: var(--fs-base);
+  font-weight: 600;
+}
+
+.home-content__buttons {
+  margin-top: var(--s-lgr);
+}

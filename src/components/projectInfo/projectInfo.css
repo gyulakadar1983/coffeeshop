@@ -1,0 +1,32 @@
+.projectInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--s-sm);
+  padding: var(--p-base) 0;
+  text-align: center;
+}
+
+.projectInfo__name {
+  color: var(--clr-primary-900);
+  font-size: 1rem;
+}
+
+.projectInfo__address {
+  color: var(--fg-2);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.projectInfo__author {
+  color: var(--fg-primary-1);
+  transition: 300ms ease-out;
+  transition-property: color;
+
+  &:hover {
+    color: var(--clr-primary-800);
+    transition-duration: 50ms;
+  }
+}

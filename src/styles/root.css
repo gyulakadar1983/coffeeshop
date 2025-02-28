@@ -1,0 +1,192 @@
+:root {
+  color-scheme: light only;
+
+  --clr-primary-0: color-mix(in srgb, #fff 50%, var(--clr-primary-400));
+  --clr-primary-100: color-mix(in srgb, #fff 35%, var(--clr-primary-400));
+  --clr-primary-200: color-mix(in srgb, #fff 25%, var(--clr-primary-400));
+  --clr-primary-300: color-mix(in srgb, #fff 15%, var(--clr-primary-400));
+  --clr-primary-400: #a27b5c;
+  --clr-primary-500: color-mix(in srgb, #000 15%, var(--clr-primary-400));
+  --clr-primary-600: color-mix(in srgb, #000 25%, var(--clr-primary-400));
+  --clr-primary-700: color-mix(in srgb, #000 35%, var(--clr-primary-400));
+  --clr-primary-800: color-mix(in srgb, #000 45%, var(--clr-primary-400));
+  --clr-primary-900: color-mix(in srgb, #000 55%, var(--clr-primary-400));
+
+  --clr-secondary-0: color-mix(in srgb, #fff 90%, var(--clr-secondary-400));
+  --clr-secondary-100: color-mix(in srgb, #fff 80%, var(--clr-secondary-400));
+  --clr-secondary-200: color-mix(in srgb, #fff 70%, var(--clr-secondary-400));
+  --clr-secondary-300: color-mix(in srgb, #fff 60%, var(--clr-secondary-400));
+  --clr-secondary-400: #f3ad3e;
+  --clr-secondary-500: color-mix(in srgb, #000 15%, var(--clr-secondary-400));
+  --clr-secondary-600: color-mix(in srgb, #000 25%, var(--clr-secondary-400));
+  --clr-secondary-700: color-mix(in srgb, #000 35%, var(--clr-secondary-400));
+  --clr-secondary-800: color-mix(in srgb, #000 45%, var(--clr-secondary-400));
+  --clr-secondary-900: color-mix(in srgb, #000 55%, var(--clr-secondary-400));
+
+  --clr-ntrl-0: #fff;
+  --clr-ntrl-100: color-mix(in srgb, #000 5%, var(--clr-ntrl-0));
+  --clr-ntrl-200: color-mix(in srgb, #000 15%, var(--clr-ntrl-0));
+  --clr-ntrl-300: color-mix(in srgb, #000 25%, var(--clr-ntrl-0));
+  --clr-ntrl-400: color-mix(in srgb, #000 35%, var(--clr-ntrl-0));
+  --clr-ntrl-500: color-mix(in srgb, #000 45%, var(--clr-ntrl-0));
+  --clr-ntrl-600: color-mix(in srgb, #000 55%, var(--clr-ntrl-0));
+  --clr-ntrl-700: color-mix(in srgb, #000 70%, var(--clr-ntrl-0));
+  --clr-ntrl-800: color-mix(in srgb, #000 85%, var(--clr-ntrl-0));
+  --clr-ntrl-900: #000;
+
+  --clr-red-0: color-mix(in srgb, #fff 95%, var(--clr-red-400));
+  --clr-red-100: color-mix(in srgb, #fff 85%, var(--clr-red-400));
+  --clr-red-200: color-mix(in srgb, #fff 75%, var(--clr-red-400));
+  --clr-red-300: color-mix(in srgb, #fff 65%, var(--clr-red-400));
+  --clr-red-400: #f14c35;
+  --clr-red-500: color-mix(in srgb, #000 15%, var(--clr-red-400));
+  --clr-red-600: color-mix(in srgb, #000 25%, var(--clr-red-400));
+  --clr-red-700: color-mix(in srgb, #000 35%, var(--clr-red-400));
+  --clr-red-800: color-mix(in srgb, #000 45%, var(--clr-red-400));
+  --clr-red-900: color-mix(in srgb, #000 55%, var(--clr-red-400));
+
+  --clr-red-0: color-mix(in srgb, #fff 95%, var(--clr-green-400));
+  --clr-green-100: color-mix(in srgb, #fff 85%, var(--clr-green-400));
+  --clr-green-200: color-mix(in srgb, #fff 75%, var(--clr-green-400));
+  --clr-green-300: color-mix(in srgb, #fff 65%, var(--clr-green-400));
+  --clr-green-400: #22d7a6;
+  --clr-green-500: color-mix(in srgb, #000 15%, var(--clr-green-400));
+  --clr-green-600: color-mix(in srgb, #000 25%, var(--clr-green-400));
+  --clr-green-700: color-mix(in srgb, #000 35%, var(--clr-green-400));
+  --clr-green-800: color-mix(in srgb, #000 45%, var(--clr-green-400));
+  --clr-green-900: color-mix(in srgb, #000 55%, var(--clr-green-400));
+
+  --fg-1: var(--clr-ntrl-800);
+  --fg-2: var(--clr-ntrl-700);
+  --fg-3: var(--clr-ntrl-500);
+  --fg-special-1: var(--clr-red-400);
+  --fg-special-2: var(--clr-green-800);
+  --fg-primary-1: var(--clr-primary-500);
+
+  color: var(--fg-1);
+
+  --bc-primary-lt: var(--clr-primary-200);
+
+  --bc-ntrl-dk: var(--clr-ntrl-700);
+  --bc-ntrl-lt: var(--clr-ntrl-200);
+
+  --bc-special-1: var(--clr-red-400);
+
+  --bg-body: var(--clr-ntrl-0);
+  --bg-nav-header: var(--clr-secondary-0);
+  --bg-page: var(--clr-ntrl-0);
+
+  --bg-section: var(--clr-secondary-0);
+  --bg-section-alt: var(--clr-secondary-100);
+
+  --bg-btn-primary: var(--clr-primary-400);
+  --bg-btn-primary-hov: var(--clr-primary-500);
+  --bg-btn-primary-active: var(--clr-primary-600);
+  --bc-btn-primary: transparent;
+  --bc-btn-primary-hov: transparent;
+  --bc-btn-primary-active: transparent;
+  --fg-btn-primary: var(--clr-ntrl-100);
+  --fg-btn-primary-hov: var(--fg-btn-primary);
+  --fg-btn-primary-active: var(--fg-btn-primary);
+
+  --bg-btn-secondary: transparent;
+  --bg-btn-secondary-hov: var(--clr-secondary-100);
+  --bg-btn-secondary-active: var(--clr-secondary-200);
+  --bc-btn-secondary: var(--bc-ntrl-dk);
+  --bc-btn-secondary-hov: var(--bc-ntrl-dk);
+  --bc-btn-secondary-active: var(--bc-btn-secondary-hov);
+  --fg-btn-secondary: var(--fg-1);
+  --fg-btn-secondary-hov: var(--fg-btn-secondary);
+  --fg-btn-secondary-active: var(--fg-btn-secondary);
+
+  --bg-btn-tertiary: transparent;
+  --bg-btn-tertiary-hov: var(--clr-ntrl-100);
+  --bg-btn-tertiary-active: var(--clr-ntrl-200);
+  --bc-btn-tertiary: transparent;
+  --bc-btn-tertiary-hov: transparent;
+  --bc-btn-tertiary-active: transparent;
+  --fg-btn-tertiary: var(--fg-2);
+  --fg-btn-tertiary-hov: var(--fg-btn-tertiary);
+  --fg-btn-tertiary-active: var(--fg-btn-tertiary);
+
+  --bg-btn-special-1: transparent;
+  --bg-btn-special-1-hov: var(--clr-red-100);
+  --bg-btn-special-1-active: var(--clr-red-200);
+  --bc-btn-special-1: transparent;
+  --bc-btn-special-1-hov: transparent;
+  --bc-btn-special-1-active: transparent;
+  --fg-btn-special-1: var(--fg-special-1);
+  --fg-btn-special-1-hov: var(--fg-btn-special-1);
+  --fg-btn-special-1-active: var(--fg-btn-special-1);
+
+  --fs-btn: 0.95rem;
+
+  --bg-table-row: transparent;
+  --bg-table-row-hov: transparent;
+  --bg-table-row-alt: transparent;
+  --bg-table-row-alt-hov: transparent;
+  --bc-table-row: var(--bc-ntrl-lt);
+  --bc-table: var(--bc-ntrl-dk);
+
+  --bg-input: var(--clr-ntrl-0);
+  --bg-input-hov: var(--clr-ntrl-0);
+  --bg-input-focus: var(--clr-ntrl-0);
+  --bc-input: var(--bc-ntrl-dk);
+  --bc-input-hov: var(--bc-input);
+  --bc-input-focus: var(--bc-input);
+  --fg-input: initial;
+
+  --bw-sm: 1px;
+  --bw-base: 1px;
+  --bw-lg: 3px;
+
+  --fg-logo: var(--clr-ntrl-900);
+
+  --ff-primary: "Inter", sans-serif;
+  /* @supports (font-variation-settings: normal) {
+    --ff-primary: "InterVariable", sans-serif;
+    font-optical-sizing: auto;
+  } */
+
+  --fs-smr: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.6rem;
+  --fs-lgr: 1.9rem;
+  --fs-lgst: 2.8rem;
+
+  @media (max-width: 30em) {
+    --fs-lg: 1.3rem;
+    --fs-lgr: 1.4rem;
+    --fs-lgst: 1.6rem;
+  }
+
+  --h-smr: 32px;
+  --h-sm: 40px;
+  --h-base: 46px;
+
+  --o: var(--clr-secondary-400);
+
+  --p-smr: 2px;
+  --p-sm: 5px;
+  --p-base: 10px;
+  --p-lg: 15px;
+  --p-lgr: 20px;
+  --p-lgst: 40px;
+
+  --s-sm: 0.3rem;
+  --s-base: 0.62rem;
+  --s-lg: 1rem;
+  --s-lgr: 1.3rem;
+  --s-lgst: 3.5rem;
+}
+
+.text-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.text-center {
+  justify-content: center;
+  text-align: center;
+}

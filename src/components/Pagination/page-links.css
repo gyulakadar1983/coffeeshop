@@ -1,0 +1,23 @@
+.page-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-sm);
+  width: 100%;
+  padding: var(--p-base);
+  margin-top: var(--s-sm);
+}
+
+.page-link {
+  border: var(--bw-sm) solid var(--bc-ntrl-lt);
+  background: transparent;
+  font-size: var(--fs-btn);
+  color: var(--clr-primary-400);
+
+  &.is-active {
+    background: var(--clr-primary-400);
+    border: none;
+    color: var(--clr-ntrl-0);
+  }
+}

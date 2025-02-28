@@ -1,0 +1,80 @@
+/* @import 'index.css'; */
+@import "../../fonts/Inter/inter.css";
+@import "../../styles/reset.css";
+@import "../../styles/root.css";
+@import "../../layouts/base.css";
+@import "../../components/logo/logo.css";
+@import "../../components/buttons/buttons.css";
+@import "../../components/Form/form.css";
+@import "../../components/RequestHandler/request-handler.css";
+@import "../../components/projectInfo/projectInfo.css";
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login-content {
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  width: min(100%, 800px);
+  height: min(100%, 600px);
+  padding: var(--p-lg);
+  background: var(--bg-section);
+}
+
+@media (max-width: 50em) {
+  .login-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.login-content__logo-container {
+  grid-row: 1;
+  position: relative;
+  height: calc(70px / 2.3);
+}
+
+.login-content__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-content__header {
+  width: min(100%, 350px);
+  text-align: center;
+  margin-bottom: var(--s-lgr);
+  padding-bottom: var(--s-lg);
+  border-bottom: var(--bw-sm) solid var(--bc-ntrl-lt);
+}
+
+.login-content__heading {
+  margin-bottom: var(--s-base);
+  color: var(--fg-2);
+  font-size: var(--fs-lgr);
+  font-weight: 600;
+}
+
+.login-form {
+  position: relative;
+  grid-row: 2;
+  margin: auto;
+  width: min(100%, 350px);
+}
+
+.login-form__main-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-base);
+}
+
+.login-form__buttons {
+  margin-top: var(--s-lgr);
+}

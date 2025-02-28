@@ -1,0 +1,15 @@
+# /dist
+# /node_modules
+# Dockerfile*
+# *.yaml
+# certs
+
+*
+
+!src/
+!src/**/*
+!*.config.js
+!package*.*
+!.gitignore
+
+src/api/generateorder.php

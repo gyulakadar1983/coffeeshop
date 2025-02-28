@@ -1,0 +1,7 @@
+@import "index.css";
+@import "components/Table/table.css";
+@import "components/Pagination/page-links.css";
+
+.customers-control-panel {
+  margin-bottom: var(--s-lgr);
+}

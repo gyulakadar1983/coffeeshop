@@ -1,0 +1,67 @@
+@import "index.css";
+@import "components/Table/table.css";
+@import "components/Pagination/page-links.css";
+@import "components/Modal/modal.css";
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-sm);
+}
+
+.product-header__name {
+  font-size: var(--fs-base);
+
+  .table.table--compact & {
+    font-weight: 500;
+  }
+}
+
+.product-header__type {
+  color: var(--fg-3);
+  font-size: var(--fs-sm);
+}
+
+.products-control-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-lgr);
+  margin-bottom: var(--s-lgr);
+}
+
+@media (max-width: 30em) {
+  .products-control-panel {
+    gap: var(--s-lg);
+  }
+}
+
+.products-control-panel__form {
+  flex: 1;
+}
+
+@media (max-width: 50em) {
+  .products-control-panel__add-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 30em) {
+  .products-control-panel__add-button {
+    @mixin btn primary;
+    font-weight: 500;
+  }
+}
+
+.add-product__main-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-lg);
+}
+
+.add-product__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--s-base);
+  width: 100%;
+  margin-top: 40px;
+}

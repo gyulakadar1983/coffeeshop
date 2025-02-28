@@ -1,0 +1,27 @@
+<template class="js-request-status-templates">
+  <svg
+    width="40"
+    height="40"
+    class="progress-overlay__loading-svg js-progress-loading-svg"
+  >
+    <use href="#loading-svg" />
+  </svg>
+  <svg
+    width="40"
+    height="40"
+    class="progress-overlay__warning-svg js-progress-error-svg"
+  >
+    <use href="#error-svg" />
+  </svg>
+  <div class="progress-overlay js-progress-overlay"></div>
+  <p class="progress-overlay__error-msg js-progress-error-msg"></p>
+  <div
+    class="progress-overlay__button-container js-progress-button-container"
+  ></div>
+  <button class="btn btn--secondary btn--smr js-progress-retry-btn">
+    Повторить
+  </button>
+  <button class="btn btn--tertiary btn--smr js-progress-cancel-btn">
+    Отмена
+  </button>
+</template>

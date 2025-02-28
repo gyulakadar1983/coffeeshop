@@ -1,0 +1,78 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-lg);
+  width: max-content;
+  &:where(:not(.btn--h-unset)) {
+    height: var(--h-base);
+  }
+  padding: 0 var(--p-lgr);
+  border-radius: var(--br-base);
+  white-space: nowrap;
+  font-size: var(--fs-btn);
+  font-weight: 400;
+}
+
+@define-mixin btn $mod {
+  background: var(--bg-btn-$mod);
+  border: var(--bw-base) solid var(--bc-btn-$mod);
+  color: var(--fg-btn-$mod);
+
+  &:hover {
+    background: var(--bg-btn-$(mod)-hov);
+    border-color: var(--bc-btn-$(mod)-hov);
+    color: var(--fg-btn-$(mod)-hov);
+  }
+
+  &:active,
+  &.is-active {
+    background: var(--bg-btn-$(mod)-active);
+    border-color: var(--bc-btn-$(mod)-active);
+    color: var(--fg-btn-$(mod)-active);
+  }
+}
+
+.btn--primary {
+  @mixin btn primary;
+  font-weight: 500;
+}
+.btn--secondary {
+  @mixin btn secondary;
+}
+.btn--tertiary {
+  @mixin btn tertiary;
+}
+.btn--special-1 {
+  @mixin btn special-1;
+}
+
+.btn--sm {
+  height: var(--h-sm);
+}
+
+.btn--smr {
+  height: var(--h-smr);
+  padding: var(--p-base);
+  border-radius: var(--br-sm);
+  font-size: var(--fs-smr);
+}
+
+.btn--square {
+  aspect-ratio: 1;
+  padding: 0;
+}
+
+.btn--round {
+  aspect-ratio: 1;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn--w-100 {
+  width: 100%;
+}
+
+.btn--text-left {
+  justify-content: flex-start;
+}

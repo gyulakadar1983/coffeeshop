@@ -1,0 +1,11 @@
+@import "./fonts/Inter/inter.css";
+@import "./styles/reset.css";
+@import "./styles/root.css";
+@import "./layouts/base.css";
+@import "./layouts/page.css";
+@import "./components/nav-header/nav-header.css";
+@import "./components/logo/logo.css";
+@import "./components/buttons/buttons.css";
+@import "./components/Form/form.css";
+@import "./components/RequestHandler/request-handler.css";
+@import "components/projectInfo/projectInfo.css";

@@ -1,0 +1,46 @@
+@import "index.css";
+@import "components/Table/table.css";
+@import "components/Pagination/page-links.css";
+
+.orders-control-panel {
+  margin-bottom: var(--s-lgr);
+}
+
+.order-pk {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-sm);
+}
+
+.order-pk__id {
+  font-size: var(--fs-base);
+}
+
+.order-pk__date {
+  color: var(--fg-3);
+  font-size: var(--fs-sm);
+}
+
+.order-customer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-sm);
+
+  .table.table--compact & {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.order-customer__full-name {
+  font-size: var(--fs-base);
+
+  .table.table--compact & {
+    font-size: var(--fs-sm);
+  }
+}
+
+.order-customer__id {
+  color: var(--fg-3);
+  font-size: var(--fs-sm);
+}

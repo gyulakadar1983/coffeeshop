@@ -1,0 +1,45 @@
+.progress-overlay {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  inset: 0;
+  gap: var(--s-lgr);
+  padding: var(--p-base);
+  background: var(--clr-ntrl-0);
+  z-index: 1;
+}
+
+.progress-overlay__loading-svg {
+  fill: var(--clr-secondary-400);
+  animation: 1s infinite linear progress-loading-a;
+}
+
+@keyframes progress-loading-a {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.progress-overlay__warning-svg {
+  fill: var(--clr-red-400);
+}
+
+.progress-overlay__error-msg {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+  height: max-content;
+}
+
+.progress-overlay__button-container {
+  display: flex;
+  gap: var(--s-sm);
+  flex-wrap: wrap;
+}
