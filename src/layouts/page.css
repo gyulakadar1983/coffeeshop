@@ -20,12 +20,6 @@
   }
 }
 
-@media (max-width: 30em) {
-  .content-wrapper {
-    --nav-header-height: 10vh;
-  }
-}
-
 .content {
   grid-column: 2;
   display: flex;
