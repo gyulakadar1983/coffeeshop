@@ -15,7 +15,8 @@
       <img
         src="/static/logo.svg"
         alt="Логотип"
-      >
+        width="130"
+        height="29">
     </a>
   </div>
   <div class="nav-header__inner" id="nav-menu">

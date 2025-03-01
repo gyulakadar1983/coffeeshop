@@ -1,7 +1,5 @@
 .logo {
   display: block;
-  max-width: fit-content;
-  height: 100%;
   color: var(--fg-logo);
   font-family: var(--ff-primary);
   font-size: var(--fs-sm);

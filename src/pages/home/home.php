@@ -6,8 +6,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php require 'components/favicon/favicon.html' ?>
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <?php require 'components/head-preloads/head-preloads.php' ?>
     <link rel="prefetch" href="/dashboard/">
   </head>
   <body>
